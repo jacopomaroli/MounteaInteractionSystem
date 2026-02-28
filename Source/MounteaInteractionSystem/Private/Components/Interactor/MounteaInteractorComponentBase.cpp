@@ -138,7 +138,7 @@ bool UMounteaInteractorComponentBase::PerformSafetyTrace_Implementation(const AA
 	switch (SafetyTraceSetup.SafetyTracingMode)
 	{
 		case ESafetyTracingMode::ESTM_Location:
-			traceStartLocation = SafetyTraceSetup.StartLocation;
+			traceStartLocation += SafetyTraceSetup.StartLocation;
 			break;
 		case ESafetyTracingMode::ESTM_Socket:
 			{
