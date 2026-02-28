@@ -38,13 +38,22 @@ public class MounteaInteractionSystem : ModuleRules
 				"EnhancedInput",
 				"ApplicationCore",
 				"CommonInput",
-
-				"MounteaInteractionSystemEditorNotifications", "StructUtilsEditor",
-
 #if UE_4_26_OR_LATER
 				"DeveloperSettings",
 #endif
 			}
 		);
+
+		if (Target.bBuildEditor)
+		{
+			PrivateDependencyModuleNames.AddRange
+			(
+				new string[]
+				{
+					"MounteaInteractionSystemEditorNotifications",
+					"StructUtilsEditor",
+				}
+			);
+		}
 	}
 }
