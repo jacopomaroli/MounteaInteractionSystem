@@ -3,9 +3,6 @@
 #include "Helpers/MounteaInteractionSystemSettings.h"
 
 #include "InputMappingContext.h"
-#if WITH_EDITOR
-#include "StructUtilsMetadata.h"
-#endif
 #include "Helpers/MounteaInteractionSettingsConfig.h"
 #include "Materials/MaterialInterface.h"
 
